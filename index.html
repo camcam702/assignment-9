@@ -4,97 +4,116 @@
 <meta charset="utf-8">
 <title>Untitled Document</title>
 </head>
+	  <img id="logo" src="4cam-10.png" width="5183" height="2242" alt=""/>
 	<h1>Cam Houghton's Portfolio</h1>
 <body>
 		<style>
-		h1
-			{font: 90pt "Helvetica", bold,italic;
-				text-align: center;
-				text-decoration: underline
+			@font-face{
+			font-family: "Audiowide";
+			src:url("Audiowide-Regular.ttf")
 			}
+		h1
+			{font: 70pt bold,italic;
+			text-align: center;
+			text-decoration: underline;
+			font-family: "Audiowide"}
 		tr:nth-child(even) {
-			background-color:#DFC3C3;}
+			background-color:darkgray;}
 		figure
-		{margin-top: 30px
-		}
+			{margin-top: 30px
+			}
 		figcaption
-		{
-		text-align:center}
-		img
-		{box-shadow: 2px 3px 6px black}
+			{
+			text-align:center}
+		img.thumbnail
+			{box-shadow: 2px 3px 6px black}
+		img.write
+			{background:#E1E1E1; }
 		table
-		{border-collapse: collapse;
-		width: 1560px;
-		margin: 50px;
-		box-shadow: 1px 2px 6px dimgray;
-		max-width: 100%;
+			{border-collapse: collapse;
+			width: 1560px;
+			margin: 50px;
+			box-shadow: 1px 2px 6px dimgray;
+			max-width: 100%;
 		}
 		th {
-		position: sticky;
+			position: sticky;
 		}
 		th,td
 			{border: 1px solid #1F0000;
 			text-align: center}
 		body 
-		{place-items: center;
-		font: 13pt/1.5em "Helvetica", bold;
-		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica", "Arial", "sans-serif";
-		max-width: 100%
+			{place-items: center;
+			font: 13pt/1.5em "Helvetica", bold;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica", "Arial", "sans-serif";
+			max-width: 100%;
+			background-color: #E1E1E1;
+				background-image: image();
+			src:url("../../../personal/4cam/4cam-10.png");
 			}
 		div
-		{id="page";
-		width: 1560px;
-		height: auto;
-		align-content: center;
-		border: #000000;
-		box-shadow: 2px 3px 6px dimgray;
-		background-color: #B8A1A1;
-		max-width: 100%;
+			{id="page";
+			width: 1560px;
+			height: auto;
+			align-content: center;
+			border: #000000;
+			box-shadow: 2px 3px 6px dimgray;
+			background-color: darkgray;
+			max-width: 100%;
 			}
 		main
-		{id="textbox";
-		display:flex;
-		flex-wrap: wrap;
-		margin: 20px;
-		align-content: center;
-		justify-content: space-evenly;
-		max-width: 100%;
-
-		box-shadow: 2px 3px 6px black;
+			{id="textbox";
+			display:flex;
+			flex-wrap: wrap;
+			margin: 20px;
+			align-content: center;
+			justify-content: space-evenly;
+			max-width: 100%;
+			box-shadow: 2px 3px 6px black;
 			}
 		@media only screen and (max-width: 750px) {
 			main {gid-template-columns: auto;
 			width: 100vw;
 			align-content: center;
-			}
+			}}
 			h1 {width: 80vw;
-				align-content: center;}
+				align-content: center;
+			}
+		#logo {
+			flex:auto;
+			width: 250px;
+			height: auto;
+			position: fixed;
+			top: 1;
 			}
 		}
 			
 	</style>
 <div>
-<title> Cam Houghton's Portfolio</title>
-	
+<title>Cam Houghton's Portfolio</title>
+
 <main>
 	<figure>
-        <a href="lmd 1 & 2.jpg"><img src="lmd thumbnail.jpg" alt=""/></a>
+        <a href="lmd 1 & 2.jpg"><img class="thumbnail" src="lmd thumbnail.jpg" alt=""/></a>
 			<figcaption> A custom CD I had made for my girlfriend.</figcaption>
 		</figure>
 		<figure>
-		<a href="lovely ladies 1 & 2.jpg"><img src="lovely ladies thumbnail.jpg" alt=""/></a>
+		<a href="lovely ladies 1 & 2.jpg"><img class="thumbnail" src="lovely ladies thumbnail.jpg" alt=""/></a>
 			<figcaption> Punk record sleeve for GRC 350.</figcaption>
 		</figure>
 		<figure>
-          <a href="Cox Direct Mailer 11x6 1 & 2.jpg"><img src="cox thumbnail.jpg" alt=""/></a>
+          <a href="Cox Direct Mailer 11x6 1 & 2.jpg"><img class="thumbnail" src="cox thumbnail.jpg" alt=""/></a>
 			 <figcaption> A Cox mailer I had made for GRC 350.</figcaption>
 		</figure>
 		<figure>
-          <a href="infographic fin.jpg"><img src="infographic thumbnail.jpg" alt=""/></a>
+          <a href="infographic fin.jpg"><img class="thumbnail" src="infographic thumbnail.jpg" alt=""/></a>
 			 <figcaption> Infographic for the graphic design program.</figcaption>
 		</figure>
-		<figure> <a href="billboard.jpg"> <img src="billboard thumbnail.jpg" alt=""/></a>
+		<figure> <a href="billboard.jpg"> <img class="thumbnail" src="billboard thumbnail.jpg" alt=""/></a>
 			<figcaption> Billboard for the graphic design program</figcaption>
+		</figure>
+		<figure> <a href="PRIORITY TAX-02.png"> <img id="write" class="thumbnail" thumbnail src="PRIORITY TAX.png"></a>
+			<figcaption> Shirts for a tax company located in Boston</figcaption>
 		</figure>
 	</main>
 </div>
@@ -135,6 +154,14 @@
 			<td> 2026</td>
 			<td> 300</td>
 		</tr>
+		<tr>
+			<td> Priority Tax Relief</td>
+			<td> .PNG / .AI / .PSD </td>
+			<td> 2026 </td>
+			<td> 300 </td>
+		</tr>
 	</table>
+
 </body>
+
 </html>
